@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <title>nishidev | 西三河開発</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="nishidev（西三河開発）公式サイト。" />
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&family=Kiwi+Maru:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fafafa;
+            color: #111;
+            font-family: "Hina Mincho", serif;
+            font-weight: bold;
+            line-height: 1.8;
+            margin: 0;
+            padding: 4rem 1.5rem;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        h1 {
+            font-family: "Hina Mincho", serif;
+            font-size: clamp(2.4rem, 6vw, 3.6rem);
+            letter-spacing: 0.08em;
+            margin: 0;
+        }
+        h1 span {
+            display: block;
+            font-size: 1.2rem;
+            letter-spacing: 0.3em;
+            margin-top: 0.3rem;
+            color: #444;
+        }
+        main {
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        p {
+            margin: 1.5rem 0;
+            font-size: 1.0rem;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #666;
+            margin-top: 5rem;
+        }
+        a {
+            color: #111;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+        }
+        a:hover {
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        nishidev
+        <span>西三河開発</span>
+    </h1>
+</header>
+
+<main>
+    <p>
+        首都圏を拠点に、個人でWebや業務ツールの開発を行っています。<br>
+        猫が好きです😺
+    </p>
+
+    <p>
+        お問い合わせは下記メールアドレスへお願いします。
+    </p>
+
+    <p>
+        <a href="mailto:info@nishidev.tokyo">info@nishidev.tokyo</a>
+    </p>
+</main>
+
+<footer>
+    © <span id="year"></span> nishidev (西三河開発)
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
